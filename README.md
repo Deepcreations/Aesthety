@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <div>
   <button onclick="showLogin()">Log In</button>
   <button onclick="showSignUp()">Sign Up</button>
@@ -44,8 +45,8 @@
   }
 </script>
 
-<style>
-    /* Center the image */
+
+  <style>
     .center {
       display: flex;
       justify-content: center;
@@ -55,13 +56,15 @@
 
     /* Set the image size */
     .image {
-      max-width: 100%;
-      max-height: 100%;
+      width: 300px;
+      height: 300px;
     }
   </style>
+</head>
 <body>
   <div class="center">
-    <img class="image" src="" alt="Your Image">
+    <img class="image" src="/storage/emulated/0/Documents/pixelLab/20230904_003802.png" alt="Your Image">
   </div>
 </body>
 </html>
+
