@@ -1,0 +1,156 @@
+
+<div>
+  <button onclick="showLogin()">Log In</button>
+  <button onclick="showSignUp()">Sign Up</button>
+</div>
+
+<div id="loginForm" style="display: none;">
+  <form>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+  
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+
+    <input type="submit" value="Log In">
+  </form>
+</div>
+
+<div id="signupForm" style="display: none;">
+  <form>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+  
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+  
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+
+    <input type="submit" value="Sign Up">
+  </form>
+</div>
+
+<script>
+  function showLogin() {
+    document.getElementById("loginForm").style.display = "block";
+    document.getElementById("signupForm").style.display = "none";
+  }
+
+  function showSignUp() {
+    document.getElementById("loginForm").style.display = "none";
+    document.getElementById("signupForm").style.display = "block";
+  }
+</script>
+
+<style>
+    /* Center the image */
+    .center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    /* Set the image size */
+    .image {
+      max-width: 100%;
+      max-height: 100%;
+    }
+  </style>
+<body>
+  <div class="center">
+    <img class="image" src="" alt="Your Image">
+  </div>
+</body>
+
+<style>css
+/* Style for the form container */
+form {
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+}
+
+/* Style for form labels */
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+/* Style for form input fields */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Style for form submit button */
+input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Style for the buttons */
+button {
+  padding: 10px 20px;
+  margin-right: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Style for the buttons on hover */
+button:hover {
+  background-color: #45a049;
+}
+
+/* Style for the form container */
+div {
+  margin-bottom: 20px;
+}</style><script>`javascript
+// Function to validate the form inputs
+function validateForm() {
+  var username = document.forms["myForm"]["username"].value;
+  var email = document.forms["myForm"]["email"].value;
+  var password = document.forms["myForm"]["password"].value;
+
+  if (username == "") {
+    alert("Please enter a username");
+    return false;
+  }
+
+  if (email == "") {
+    alert("Please enter an email");
+    return false;
+  }
+
+  if (password == "") {
+    alert("Please enter a password");
+    return false;
+  }
+}
+
+// Function to handle form submission
+function submitForm() {
+  if (validateForm()) {
+    // Code to submit the form
+    console.log("Form submitted successfully");
+  }
+}
+
+</script>
